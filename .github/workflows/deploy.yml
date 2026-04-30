@@ -30,10 +30,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
-
-      - name: Install peer dependencies
-        run: pnpm add react@18.3.1 react-dom@18.3.1 --no-save
+        run: pnpm install
 
       - name: Build
         run: pnpm build
